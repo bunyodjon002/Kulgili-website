@@ -1,0 +1,90 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .contentnavbar {
+        display: flex;
+        color: #fff;
+        position: relative;
+        justify-content: right;
+        text-align: left;
+    }
+    
+    .contentnavbar h1 {
+        position: relative;
+        right: 800px;
+        top: 20px;
+    }
+    
+    .contentnavbar span {
+        color: #4070F4;
+    }
+    
+    .contentnavbar ul {
+        display: flex;
+        margin-right: 40px;
+    }
+    
+    .contentnavbar li {
+        margin: 20px;
+        list-style: none;
+    }
+    
+    .contentnavbar a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .contentnavbar a:hover {
+        color: #4070F4;
+        text-shadow: 0 0 10px #4070F4, 0 0 20px #4070F4, 0 0 30px #4070F4, 0 0 40px #4070F4, 0 0 70px #4070F4, 0 0 80px #4070F4, 0 0 100px #4070F4, 0 0 150px #4070F4;
+    }
+    
+    body {
+        min-height: 100vh;
+        background: #010718;
+    }
+    
+    .container .text {
+        position: relative;
+        color: #4070F4;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .container .spanis {
+        min-height: 60vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container .text .frist-text {
+        color: #fff;
+    }
+    
+    .text.sec-text::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #010718;
+        border-left: 2px solid#010718;
+        animation: animate 4s steps(12) infinite;
+    }
+    
+    @keyframes animate {
+        40%,
+        60% {
+            left: 100%;
+        }
+        100% {
+            left: 0%;
+        }
+    }
