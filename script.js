@@ -1,17 +1,21 @@
-const text = document.querySelector(".sec-text");
-const textLoad = () => {
-    setTimeout(() => {
-        text.textContent = "Freelancer";
-    }, 0);
-    setTimeout(() => {
-        text.textContent = "Backend";
-    }, 4000);
-    setTimeout(() => {
-        text.textContent = "Fullstack";
-    }, 8000);
-    setTimeout(() => {
-        text.textContent = "Muhandis";
-    }, 12000);
-}
-textLoad();
-setInterval(textLoad, 12000);
+const swiper = new Swiper('.sample-slider', {
+    loop: true,
+    slidesPerView: 3,
+    centeredSlides: true,
+    effect: "coverflow",
+    coverflowEffect: { // added
+        rotate: 0, // added (Rotate of the prev and next slides)
+        depth: 200, // added (Depth of the prev and next slides)
+        stretch: 30, // added (Space between the slides)
+        modifier: 1, // added (Multiply the values of rotate, depth, and stretch)
+        scale: 1, // added (Size ratio of the prev and next slides)
+        slideShadows: false, // added (Presence of shadow on the surfaces of the prev and next slides)
+    }, // added
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

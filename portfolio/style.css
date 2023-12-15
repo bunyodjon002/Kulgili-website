@@ -53,14 +53,17 @@
         color: #4070F4;
         font-size: 30px;
         font-weight: 600;
+        text-align: right;
+        left: 200px;
+        top: 200px;
     }
     
     .container .spanis {
         min-height: 60vh;
         overflow: hidden;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        /* align-items: center;
+        justify-content: center; */
     }
     
     .container .text .frist-text {

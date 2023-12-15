@@ -16,7 +16,8 @@
 
 .containerr {
     /* background-color: rgb(37, 79, 26); */
-    min-width: 100%;
+    width: 100%;
+    height: 500vh;
     /* min-height: 500vh; */
 }
 
@@ -53,10 +54,15 @@
     border-radius: 5px;
 }
 
-.navbar ul li {
+.navbar li {
+    display: inline-block;
+}
+
+.navbar ul {
     display: inline-block;
     position: relative;
     left: 200px;
+    justify-content: end;
 }
 
 .loginbutton1 span {
@@ -1241,7 +1247,7 @@ ion-icon {
 .content11 {
     background-color: #0032ba;
     width: 100%;
-    min-height: 300vh;
+    min-height: 80vh;
     position: relative;
     bottom: 500px;
 }
@@ -1306,7 +1312,8 @@ ion-icon {
 .page-input2 {
     position: relative;
     top: 100px;
-    left: 300px;
+    left: 350px;
+    display: flex;
 }
 
 .wrapper-buttons1 {
@@ -1318,7 +1325,7 @@ ion-icon {
     z-index: 1;
     background-color: rgb(210, 232, 35);
     border-radius: 10000px;
-    left: 570px;
+    left: 590px;
     top: 40px;
 }
 
@@ -1650,7 +1657,7 @@ ion-icon {
 }
 
 .spannlogo {
-    color: rgb(80, 34, 116);
+    fill: rgb(80, 34, 116);
 }
 
 .imgcircle {
